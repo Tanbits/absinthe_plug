@@ -7,7 +7,7 @@ defmodule Absinthe.Plug.Mixfile do
     [
       app: :absinthe_plug,
       version: @version,
-      elixir: "~> 1.10",
+      elixir: "~> 1.13",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -42,10 +42,10 @@ defmodule Absinthe.Plug.Mixfile do
 
   defp deps do
     [
-      {:absinthe, "~> 1.5"},
-      {:plug, "~> 1.4"},
+      {:absinthe, "~> 1.7"},
+      {:plug, "~> 1.13"},
       {:jason, ">= 0.0.0", only: [:dev, :test]},
-      {:ex_doc, "~> 0.20", only: :dev}
+      {:ex_doc, "~> 0.28.2", only: :dev}
     ]
   end
 end
